@@ -2,6 +2,14 @@ import { Box, Typography } from "@mui/material";
 import { red } from "@mui/material/colors";
 import type { NextPage } from "next";
 import Head from "next/head";
+import { css } from "@emotion/react";
+
+const root = css`
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const Home: NextPage = () => {
   return (
@@ -12,13 +20,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Box
-        height="100vh"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-      >
-        <Typography variant="h1" color={red[100]}>
+      <Box css={root}>
+        <Typography variant="h1" color={red[100]} mr="1rem">
           Welcome
         </Typography>
         <Typography variant="h1">to sports!</Typography>
