@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
+import { red } from "@mui/material/colors";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +18,10 @@ const Home: NextPage = () => {
         justifyContent="center"
         alignItems="center"
       >
-        <Typography variant="h1">Welcome to sports!</Typography>
+        <Typography variant="h1" color={red[100]}>
+          Welcome
+        </Typography>
+        <Typography variant="h1">to sports!</Typography>
       </Box>
     </div>
   );
